@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- html normal com dois inputs  -->
     <form action="auth.php" method="POST">
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="senha" placeholder="Senha">

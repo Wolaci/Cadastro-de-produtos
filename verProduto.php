@@ -1,5 +1,5 @@
  <?php
-       $livros = file('produtos.csv');
+       $livros = file('produtos.csv'); //DA LINHA 2 A LINHA 4 VAI LISTAR OS PRODUTOS CADASTRADOS NA TELA, COPIA QUE É SUCESSO
        for ($i = 0; $i < sizeof($livros); $i++) {
            $livros[$i] = explode(';', $livros[$i]);
        }
@@ -23,4 +23,4 @@
            </tr>
        <?php endforeach ?>
    </table>
-   <a href="produto.php">Peça um novo produto</a>
+   <a href="produto.php">Peça um novo produto</a> <!-- MUDA ISSO DE ACORDO COM O QUE ELE PEDIR -->

@@ -1,4 +1,5 @@
 <?php
+
     include 'init.php';
     $usuario = currentUser();
     $usuarioEmail = currentUserEmail();
@@ -23,6 +24,7 @@
         return $el['usuarioEmail'] == currentUser();
     }
     $livros = array_filter($livros, 'filtrar');
+    //COPIA DE ACORDO COM OS CAMPOS QUE DEVEM SER USADOS
 ?>
 
 <!DOCTYPE html>

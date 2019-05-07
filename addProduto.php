@@ -1,15 +1,15 @@
 <?php
-    include 'init.php';
-    if (!is_logged()) {
+    include 'init.php'; //INCLUI O ARQUIVO DA PÁGINA INIT.PHP
+    if (!is_logged()) { //VERIFICA SE TÁ LOGADO
         include 'forbidden.html';
         exit();
     }
-    $nome = post('nome');
-    $autor = post('autor');
+    $nome = post('nome'); //PASSANDO NOME DOS INPUTS
+    $autor = post('autor'); // PASSANDO NOME DOS INPUTS
     $usuarioEmail = currentUserEmail();
-    $data = juntar([$usuarioEmail, $nome, $autor]) . "\n";
-    $handle = fopen('produtos.csv', 'a');
-    fwrite($handle, $data);
+    $data = juntar([$usuarioEmail, $nome, $autor]) . "\n";//junta os bagulhos quando cadastra aí aparece na página
+    $handle = fopen('produtos.csv', 'a');//abre o arquivo produtos.csv
+    fwrite($handle, $data);//escreve no arquivo produtos.csv
 ?>
 <html lang="en">
 <head>

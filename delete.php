@@ -1,4 +1,7 @@
 <?php
+
+//DELETA O PRODUTO COPIA QUE É SUCESSO SE FOR PRA APAGAR OUTRA COISA MUDA O NOME DO ARQUIVO CSV NO BAGULHO FILE E FOPEN
+
 $livro = file('produtos.csv');
 
 $id = $_GET['id'];
